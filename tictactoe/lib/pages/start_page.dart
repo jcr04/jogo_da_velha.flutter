@@ -7,11 +7,6 @@ class StartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Jogo da Velha'),
-        centerTitle: true,
-        backgroundColor: Colors.blueGrey, // Cor personalizada para a AppBar
-      ),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -24,6 +19,8 @@ class StartPage extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              const Text('Jogo da Velha',
+                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
               Image.asset('lib/assets/imagens/logo.png', height: 100),
               const SizedBox(height: 30),
               _buildButton(context, 'Start', () {
