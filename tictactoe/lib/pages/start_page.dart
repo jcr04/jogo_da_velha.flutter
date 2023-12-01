@@ -10,32 +10,33 @@ class StartPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Jogo da Velha'),
         centerTitle: true,
+        backgroundColor: Colors.blueGrey, // Cor personalizada para a AppBar
       ),
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            // Logo ou Imagem
-            Image.asset('lib/assets/imagens/logo.png',
-                height: 100), // Substitua com o caminho do seu asset
-            const SizedBox(height: 30),
-
-            // Botão Start
-            _buildButton(
-              context,
-              'Start',
-              () => Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => GamePage())),
-            ),
-
-            const SizedBox(height: 20),
-
-            // Botão Créditos
-            _buildButton(
-                context, 'Créditos', () => _showCreditsDialog(context)),
-
-            // Adicione mais botões ou widgets conforme necessário
-          ],
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [Colors.blue, Colors.white], // Fundo gradiente
+          ),
+        ),
+        child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Image.asset('lib/assets/imagens/logo.png', height: 100),
+              const SizedBox(height: 30),
+              _buildButton(context, 'Start', () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => GamePage()),
+                );
+              }),
+              const SizedBox(height: 20),
+              _buildButton(
+                  context, 'Créditos', () => _showCreditsDialog(context)),
+            ],
+          ),
         ),
       ),
     );
@@ -47,20 +48,19 @@ class StartPage extends StatelessWidget {
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         foregroundColor: Colors.white,
-        backgroundColor: Colors.blue, // Cor do texto do botão
+        backgroundColor: Colors.blueAccent,
         padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(30), // Borda arredondada
+          borderRadius: BorderRadius.circular(30),
         ),
-        elevation: 5, // Sombra do botão
+        elevation: 8,
+        shadowColor: Colors.blue, // Sombra personalizada para o botão
       ),
       child: Row(
-        mainAxisSize: MainAxisSize.min, // Para centralizar ícones e texto
+        mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(label == 'Start'
-              ? Icons.play_arrow
-              : Icons.info_outline), // Ícone condicional
-          const SizedBox(width: 10), // Espaço entre ícone e texto
+          Icon(label == 'Start' ? Icons.play_arrow : Icons.info_outline),
+          const SizedBox(width: 10),
           Text(label),
         ],
       ),
@@ -77,9 +77,6 @@ class StartPage extends StatelessWidget {
           content: const SingleChildScrollView(
             child: ListBody(
               children: <Widget>[
-                // Logo ou imagem (opcional)
-                // Image.asset('caminho_para_imagem', height: 100),
-
                 Text('Jogo da Velha',
                     style:
                         TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
@@ -88,7 +85,6 @@ class StartPage extends StatelessWidget {
                     style: TextStyle(fontStyle: FontStyle.italic)),
                 Text('Nataly Eva Rodrigues'),
                 Text('Yan Henri'),
-                // adicionar link do repositorio
               ],
             ),
           ),

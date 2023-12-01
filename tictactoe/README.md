@@ -1,16 +1,24 @@
-# tictactoe
+# Jogo da Velha em Flutter
 
-A new Flutter project.
+## Descrição
+Este projeto é uma implementação do clássico jogo da velha, também conhecido como Tic Tac Toe, desenvolvido com o Flutter. O jogo permite que dois jogadores se enfrentem em uma batalha de estratégia e sorte. O objetivo é simples: alinhar três dos seus símbolos (X ou O) verticalmente, horizontalmente ou diagonalmente antes do seu oponente.
 
-## Getting Started
+## Funcionalidades
+- **Modos de Jogo**: Suporte para jogar contra outro jogador ou contra uma IA básica.
+- **Interface Gráfica**: Uma interface de usuário intuitiva e atraente, com animações suaves.
+- **Multiplataforma**: O jogo pode ser executado em dispositivos Android e iOS.
 
-This project is a starting point for a Flutter application.
+## Tecnologias Utilizadas
+Este jogo foi desenvolvido usando o [Flutter](https://flutter.dev/), um framework de UI da Google para criar belos aplicativos compilados nativamente.
 
-A few resources to get you started if this is your first Flutter project:
+## Instalação
+Para executar este projeto, clone o repositório e execute os seguintes comandos na raiz do projeto:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+flutter pub get
+flutter run
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Telas
+* - Tela de Inicio
+* - 
