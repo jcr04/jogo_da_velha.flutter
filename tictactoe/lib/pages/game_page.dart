@@ -30,14 +30,23 @@ class _GamePageState extends State<GamePage> {
   }
 
   Widget _buildBody() {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        _buildBoard(),
-        _buildPlayerModeSwitch(),
-        _buildResetButton(),
-      ],
+    return Container(
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [Colors.blue, Colors.white], // Fundo gradiente
+        ),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          _buildBoard(),
+          _buildPlayerModeSwitch(),
+          _buildResetButton(),
+        ],
+      ),
     );
   }
 
