@@ -21,6 +21,7 @@ flutter run
 
 ## Telas
 * - Tela de Inicio
-* - ![Screenshot_9](https://github.com/jcr04/jogo_da_velha.flutter/assets/70778525/6e1fd49c-ae1d-4ec7-b6a9-91e41ccecfb9)
+* - ![Screenshot_10](https://github.com/jcr04/jogo_da_velha.flutter/assets/70778525/ae0b7b49-0ed1-4eeb-a352-51d9ec4196bd)
 * - Tela de Jogo
-* - ![Screenshot_8](https://github.com/jcr04/jogo_da_velha.flutter/assets/70778525/d97ea961-607c-4786-bfc5-bf6397fcc9be)
+* - ![Screenshot_11](https://github.com/jcr04/jogo_da_velha.flutter/assets/70778525/d61c99c3-da9e-4c75-ae61-37bf386ee9ff)
+
