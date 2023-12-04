@@ -82,6 +82,7 @@ class StartPage extends StatelessWidget {
                     style: TextStyle(fontStyle: FontStyle.italic)),
                 Text('Nataly Eva Rodrigues'),
                 Text('Yan Henri'),
+                Text('Denilson Rodrigues')
               ],
             ),
           ),
